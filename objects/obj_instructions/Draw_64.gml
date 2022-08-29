@@ -1,0 +1,16 @@
+draw_text(600,0,"When you are ready to roll just press the corresponing number and the press space")
+draw_text(600,16,"1 - wood")
+draw_text(600,32,"2 - metal")
+draw_text(600,48,"3 - stone")
+draw_text(600,64,"4 - cloth")
+draw_text(600,80,"5 - gem")
+draw_text(600,96,"6 - food")
+draw_text(600,112,"7 - critters")
+
+
+draw_text(600,176,"To edit a stat first press controll")
+draw_text(600,192,"pressing left will incrase the value by one and right will do the inverse")
+draw_text(600,208,"pressing up or down will move the editing too the stat above or bellow")
+draw_text(600,224,"Once stats are correct simply press 'S' to save")
+draw_text(600,240,"Once saved press L to reload the saved stats")
+draw_text(600,256,"P.S Make sure to load the save before rolling")
