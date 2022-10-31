@@ -1,7 +1,7 @@
 /// @description Load the data do do dooo
 // You can write your code in this editor
 
-with (obj_button) instance_destroy();
+with (obj_stats) instance_destroy();
 
 if(file_exists("savedata.save")){
 	var _buffer = buffer_load("savedata.save");
@@ -33,6 +33,8 @@ if(file_exists("savedata.save")){
 			resourceful = _loadEntity.resourceful
 			sneaky = _loadEntity.sneaky
 			steamed = _loadEntity.steamed
+			AT = _loadEntity.AT
+			skein = _loadEntity.skein
 		}
 	}
 	show_debug_message("game loaded! "  + _string)

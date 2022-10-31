@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
 
+ if(keyboard_check_pressed(vk_space)){
 	  roll = round(random_range(1,6)+random_range(1,6)) i = round(roll + stat_shearch + buff_shearch)
 	if(i <= 7){
 		 rank = 0
@@ -17,8 +16,7 @@
 	}
 
 	roll2 = round(random_range(1,6)+random_range(1,6))
-	z = round(roll2 + stat_harvest + buff_harvest + tool)
+	z = round(roll2 + stat_harvest + buff_harvest+tool)
 
-	total = round((5-rank)+(z/5))
-	draw = true
- 
+	total = round((5-rank)+(z))
+ }

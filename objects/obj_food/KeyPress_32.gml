@@ -17,8 +17,8 @@
 	}
 
 	roll2 = round(random_range(1,6)+random_range(1,6))
-	z = round(roll2 + stat_harvest + buff_harvest + tool)
+	z = round(roll2 + stat_harvest + buff_harvest+tool)
 
-	total = round((5-rank)+(z/5))
+	total = round((5-rank)+(z))
 	draw = true
  

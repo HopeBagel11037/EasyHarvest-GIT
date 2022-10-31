@@ -5,7 +5,7 @@
 var _saveData = array_create(0);
 
 //for every instance, create strut and too the array 
-with (obj_button){
+with (obj_stats){
 	
 	var _saveEntity = 
 	{
@@ -30,6 +30,8 @@ with (obj_button){
 		resourceful : resourceful,
 		sneaky : sneaky,
 		steamed : steamed, 
+		AT: AT,
+		skein: skein,
 	}
 	array_push(_saveData, _saveEntity);
 }

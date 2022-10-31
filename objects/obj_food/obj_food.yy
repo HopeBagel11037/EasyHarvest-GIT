@@ -42,7 +42,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_metal",
+  "name": "obj_food",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,8 +1,10 @@
 /// @description enable edit mode
 // You can write your code in this editor
 
-if (keyboard_check_pressed(vk_control)){
+if (keyboard_check_pressed(vk_control) and editing == false){
 	editing = true
+}else if(keyboard_check_pressed(vk_control) and editing == true){
+	editing = false
 }
 
 if(keyboard_check_pressed(vk_up)){
@@ -14,187 +16,216 @@ if(keyboard_check_pressed(vk_down)){
 }
 
 switch stat_number{
+	
 	case 0:
-	edit_stat = "Smithing"
+	edit_stat = "Civ"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Smithing += 1
+		obj_stats.Civ += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Smithing -= 1
+		obj_stats.Civ  -= 1
 	}
 	break;
 	
 	case 1:
-	edit_stat = "Cooking"
+	edit_stat = "Arcaan"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Cooking += 1
+		obj_stats.Arcana += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Cooking -= 1
+		obj_stats.Arcana -= 1
 	}
 	break;
 	
 	case 2:
-	edit_stat = "Enchanting"
+	edit_stat = "Nature"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Enchanting += 1
+		obj_stats.Nature += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Enchanting -= 1
+		obj_stats.Nature -= 1
 	}
 	break;
 	
 	case 3:
-	edit_stat = "Agility"
+	edit_stat = "Mechanics"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Agility += 1
+		obj_stats.Mechincs += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Agility -= 1
+		obj_stats.Mechincs -= 1
 	}
 	break;
 	
 	case 4:
-	edit_stat = "Mechanics"
+	edit_stat = "Smithing"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Mechincs += 1
+		obj_stats.Smithing += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Mechincs -= 1
+		obj_stats.Smithing -= 1
 	}
 	break;
 	
 	case 5:
-	edit_stat = "Arcaan"
+	edit_stat = "Enchanting"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Arcana += 1
+		obj_stats.Enchanting += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Arcana -= 1
+		obj_stats.Enchanting -= 1
 	}
 	break;
 	
 	case 6:
-	edit_stat = "Nature"
+	edit_stat = "Cooking"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Nature += 1
+		obj_stats.Cooking += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Nature -= 1
+		obj_stats.Cooking -= 1
 	}
 	break;
 	
 	case 7:
-	edit_stat = "Civ"
+	edit_stat = "Agility"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.Civ += 1
+		obj_stats.Agility += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.Civ  -= 1
+		obj_stats.Agility -= 1
 	}
 	break;
 	
 	case 8:
-	edit_stat = "Pickaxe"
+	edit_stat = "Scholary"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.pickaxe += 1
+		obj_stats.scholary += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.pickaxe -= 1
+		obj_stats.scholary -= 1
 	}
 	break;
 	
 	case 9:
-	edit_stat = "Sickle"
+	edit_stat = "Steamed"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.sickle += 1
+		obj_stats.steamed += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.sickle -= 1
+		obj_stats.steamed -= 1
 	}
 	break;
 	
 	case 10:
-	edit_stat = "Shim"
+	edit_stat = "Resourcefuk"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.shim += 1
+		obj_stats.resourceful += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.shim -= 1
+		obj_stats.resourceful -= 1
 	}
 	break;
 	
 	case 11:
-	edit_stat = "Net"
+	edit_stat = "sneaky"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.net += 1
+		obj_stats.sneaky += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.net -= 1
+		obj_stats.sneaky -= 1
 	}
 	break;
 	
 	case 12:
-	edit_stat = "Saw"
+	edit_stat = "Ancient Tool"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.saw += 1
+		obj_stats.AT += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.saw -= 1
+		obj_stats.AT -= 1
 	}
 	break;
 	
 	case 13:
-	edit_stat = "chisel"
+	edit_stat = "Net"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.chisel += 1
+		obj_stats.net += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.chisel -= 1
+		obj_stats.net -= 1
 	}
 	break;
 	
 	case 14:
-	edit_stat = "Scholary"
+	edit_stat = "chisel"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.scholary += 1
+		obj_stats.chisel += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.scholary -= 1
+		obj_stats.chisel -= 1
 	}
 	break;
 	
 	case 15:
-	edit_stat = "Resourcefuk"
+	edit_stat = "Pickaxe"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.resourceful += 1
+		obj_stats.pickaxe += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.resourceful -= 1
+		obj_stats.pickaxe -= 1
 	}
 	break;
 	
 	case 16:
-	edit_stat = "sneaky"
+	edit_stat = "Saw"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.sneaky += 1
+		obj_stats.saw += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.sneaky -= 1
+		obj_stats.saw -= 1
 	}
 	break;
 	
 	case 17:
-	edit_stat = "Steamed"
+	edit_stat = "Sickle"
 	if(keyboard_check_pressed(vk_right)){
-		obj_button.steamed += 1
+		obj_stats.sickle += 1
 	}
 	if(keyboard_check_pressed(vk_left)){
-		obj_button.steamed -= 1
+		obj_stats.sickle -= 1
 	}
 	break;
+	
+	case 18:
+	edit_stat = "Skein"
+	if(keyboard_check_pressed(vk_right)){
+		obj_stats.skein += 1
+	}
+	if(keyboard_check_pressed(vk_left)){
+		obj_stats.skein -= 1
+	}
+	break;
+	
+	case 19:
+	edit_stat = "Shim"
+	if(keyboard_check_pressed(vk_right)){
+		obj_stats.shim += 1
+	}
+	if(keyboard_check_pressed(vk_left)){
+		obj_stats.shim -= 1
+	}
+	break;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
-if(editing == true and keyboard_check_pressed(vk_space)){
-	editing = false
-}
